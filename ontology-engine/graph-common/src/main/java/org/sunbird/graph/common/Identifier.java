@@ -33,7 +33,7 @@ public class Identifier {
 	
 	public static String getIdentifier(String graphId, String id) {
 		if (StringUtils.isBlank(graphId))
-			throw new ServerException("INVALID_",
+			throw new ServerException("ERR_INVALID_GRAPH_ID",
 					"Graph Id is required to generate an identifier");
 		String prefix = "";
 		if (graphId.length() >= 2)

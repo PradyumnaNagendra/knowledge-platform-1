@@ -9,7 +9,7 @@ import org.apache.commons.lang3.StringUtils
 import org.sunbird.common.dto.Request
 import org.sunbird.common.exception.{ClientException, ResponseCode}
 import org.sunbird.graph.dac.enums.SystemNodeTypes
-import org.sunbird.graph.dac.model.{Node, Relation}
+import org.sunbird.graph.dac.model.{MetadataCriterion, Node, Relation, SearchConditions, SearchCriteria}
 import org.sunbird.graph.relations.{IRelation, RelationHandler}
 import org.sunbird.graph.schema.IDefinition
 import org.sunbird.graph.validator.NodeValidator
@@ -51,5 +51,15 @@ trait RelationValidator extends IDefinition {
             super.validate(node, operation)
         }
     }
+
+
+    /*def getNodes(graphId: String, identifiers: List[String]): Future[List[Node]] = {
+        val searchCriteria = new SearchCriteria
+        val mc: MetadataCriterion = {
+            if(identifiers.size == 1)
+                // MetadataCriterion.create(util.Arrays.asList(new Filter(SystemProperties.IL_UNIQUE_ID.name, SearchConditions.OP_EQUAL, identifiers.get(0))));
+            else
+        }
+    }*/
 
 }

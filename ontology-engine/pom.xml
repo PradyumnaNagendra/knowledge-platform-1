@@ -18,6 +18,7 @@
         <module>graph-core</module>
         <module>graph-engine_2.11</module>
         <module>parseq</module>
+        <module>graph-core_2.11</module>
     </modules>
     <build>
         <pluginManagement>
