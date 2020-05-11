@@ -2,14 +2,15 @@ package utils
 
 object ApiId {
 
-	final val APPLICATION_HEALTH = "api.content-service.health"
+	final val APPLICATION_HEALTH = "api.content.health"
+	final val APPLICATION_SERVICE_HEALTH = "api.content.service.health"
 
 	//Content APIs
 	val CREATE_CONTENT = "api.content.create"
 	val READ_CONTENT = "api.content.read"
 	val UPDATE_CONTENT = "api.content.update"
 	val UPLOAD_CONTENT = "api.content.upload"
-
+	val RETIRE_CONTENT = "api.content.retire"
 	val COPY_CONTENT = "api.content.copy"
 	val UPLOAD_PRE_SIGNED_CONTENT = "api.content.upload.url"
 	val DISCARD_CONTENT = "api.content.discard"
